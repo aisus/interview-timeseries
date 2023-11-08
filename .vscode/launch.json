@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": ".NET Core Launch (Api)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "buildapi",
+        "program": "${workspaceFolder}/src/api/TimeSeriesStorage.Api/bin/Debug/net7.0/TimeSeriesStorage.Api.dll",
+        "args": [],
+        "cwd": "${workspaceFolder}/src/api/TimeSeriesStorage.Api",
+        "stopAtEntry": false,
+        // "serverReadyAction": {
+        //   // "action": "openExternally",
+        //   "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+        // },
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "sourceFileMap": {
+          "/Views": "${workspaceFolder}/Views"
+        }
+      },
+      {
+        "name": ".NET Core Launch (Listener)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "buildlistener",
+        "program": "${workspaceFolder}/src/listener/TimeSeriesStorage.Listener/bin/Debug/net7.0/TimeSeriesStorage.Listener.dll",
+        "args": [],
+        "cwd": "${workspaceFolder}/src/listener/TimeSeriesStorage.Listener",
+        "stopAtEntry": false,
+      //  "serverReadyAction": {
+      //     // "action": "openExternally",
+      //     "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      //   }, 
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "sourceFileMap": {
+          "/Views": "${workspaceFolder}/Views"
+        }
+      }
+    ],
+    "compounds": [
+        {
+          "name": "Api & Listener",
+          "configurations": [
+            ".NET Core Launch (Api)",
+            ".NET Core Launch (Listener)"
+          ],
+          "stopAll": true
+        }
+      ]
+  }

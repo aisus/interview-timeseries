@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+  api:
+    build: 
+      dockerfile: Dockerfile.api
+    restart: always
+    container_name: 'timeseriesstorage_api'
+    ports:
+      - 8000:80
+    environment:
+      - ConnectionStrings:TimescaleDB=${TimescaleDB}
+      - WsConnectionUrl=${WsConnectionUrl}
+    depends_on:
+      - timescaledb
+
+  listener:
+    build: 
+      dockerfile: Dockerfile.listener
+    restart: always
+    container_name: 'timeseriesstorage_listener'
+    environment:
+      - ConnectionStrings:TimescaleDB=${TimescaleDB}
+      - WsConnectionUrl=${WsConnectionUrl}
+    depends_on:
+      - timescaledb
+      - api
+
+  timescaledb:
+    image: timescale/timescaledb:latest-pg12
+    restart: always
+    ports:
+      - 9000:5432
+    environment:
+      POSTGRES_DB: timeseriesstorage
+      POSTGRES_USER: timescaledb
+      POSTGRES_PASSWORD: password
+    volumes:
+      - /data/timescaledb:/var/lib/postgresql/data

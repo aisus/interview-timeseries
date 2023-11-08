@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesStorage.Api", "TimeSeriesStorage.Api\TimeSeriesStorage.Api.csproj", "{25E56DD3-44E6-4089-A596-ED86CD82C0B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesStorage.Services", "..\common\TimeSeriesStorage.Services\TimeSeriesStorage.Services.csproj", "{D063826A-3CEE-43C1-86C7-9B4A8870D31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesStorage.Data", "..\common\TimeSeriesStorage.Data\TimeSeriesStorage.Data.csproj", "{15835C1F-A8C0-4F77-A789-395006F35E10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25E56DD3-44E6-4089-A596-ED86CD82C0B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E56DD3-44E6-4089-A596-ED86CD82C0B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E56DD3-44E6-4089-A596-ED86CD82C0B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E56DD3-44E6-4089-A596-ED86CD82C0B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D063826A-3CEE-43C1-86C7-9B4A8870D31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D063826A-3CEE-43C1-86C7-9B4A8870D31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D063826A-3CEE-43C1-86C7-9B4A8870D31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D063826A-3CEE-43C1-86C7-9B4A8870D31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15835C1F-A8C0-4F77-A789-395006F35E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15835C1F-A8C0-4F77-A789-395006F35E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15835C1F-A8C0-4F77-A789-395006F35E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15835C1F-A8C0-4F77-A789-395006F35E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31478DD2-9E43-48BA-AE64-3D35A9A75492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31478DD2-9E43-48BA-AE64-3D35A9A75492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31478DD2-9E43-48BA-AE64-3D35A9A75492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31478DD2-9E43-48BA-AE64-3D35A9A75492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16D59BB-8AC1-4C46-B9A5-3ECEE2C21F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16D59BB-8AC1-4C46-B9A5-3ECEE2C21F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16D59BB-8AC1-4C46-B9A5-3ECEE2C21F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16D59BB-8AC1-4C46-B9A5-3ECEE2C21F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
