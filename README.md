@@ -1,6 +1,6 @@
 # interview-timeseries
 
-An example application build with .NET and [TimescaleDB](https://www.timescale.com/).
+An example application built with .NET and [TimescaleDB](https://www.timescale.com/).
 
 This application processes and stores metric events emitted via websocket and exposes a simple JSON API to explore the data. 
 
