@@ -4,7 +4,7 @@ An example application built with .NET and [TimescaleDB](https://www.timescale.c
 
 This application processes and stores metric events emitted via websocket and exposes a simple JSON API to explore the data. 
 
-## How it works
+## Architecture
 
 ![architecture](img/arch.png)
 
